@@ -28,7 +28,15 @@ class MainActivity : AppCompatActivity() {
         clicMebutton.setOnClickListener {
             Toast.makeText(this@MainActivity, "button clicked", Toast.LENGTH_SHORT).show()
             //configurated the textview so that the greeting can contain the name of the user
-            greetingText.text="welcome, ${inputText}!"
+            greetingText.text="welcome,${inputText}!"
+            //set the action of the switch
+            if (zulu.isChecked){
+                greetingText.text="Sawubona, ${inputText}!"
+            }else {
+                greetingText.text="welcome, ${inputText}!"
+            }
+
+
 
         }
 
