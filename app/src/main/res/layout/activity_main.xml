@@ -10,38 +10,54 @@
 
     <TextView
         android:id="@+id/textViewone"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="317dp"
+        android:layout_height="65dp"
         android:fontFamily="@font/akaya_kanadaka"
         android:text="welcome"
+        android:textAlignment="center"
         android:textAppearance="@style/TextAppearance.AppCompat.Display2"
         android:textColor="#F1FFFFFF"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.607" />
+        app:layout_constraintTop_toBottomOf="@+id/zuluSwitch"
+        app:layout_constraintVertical_bias="0.269" />
 
     <Button
         android:id="@+id/buttonEnter"
         android:layout_width="169dp"
         android:layout_height="68dp"
+        android:layout_marginTop="48dp"
+        android:layout_marginEnd="120dp"
         android:background="#080E38"
         android:text="Click me"
         android:textAlignment="center"
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
         android:textStyle="bold"
-        tools:layout_editor_absoluteX="121dp"
-        tools:layout_editor_absoluteY="580dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewone" />
 
     <EditText
         android:id="@+id/editTextInput"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="116dp"
+        android:layout_marginEnd="100dp"
         android:ems="10"
         android:inputType="text|textPersonName"
         android:text="Name"
-        tools:layout_editor_absoluteX="100dp"
-        tools:layout_editor_absoluteY="226dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Switch
+        android:id="@+id/zuluSwitch"
+        android:layout_width="117dp"
+        android:layout_height="53dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginEnd="144dp"
+        android:text="ZULU"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextInput" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
